@@ -8,7 +8,7 @@ import java.util.List;
 public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
 
     @Override
-    public List<Speaker> finAll() {
+    public List<Speaker> findAll() {
         final List<Speaker> speakers = new ArrayList<>();
 
         final Speaker speaker1= new Speaker();
