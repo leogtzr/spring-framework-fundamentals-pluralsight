@@ -16,6 +16,7 @@ public class SpeakerServiceImpl implements SpeakerService {
         System.out.println("SpeakerServiceImpl no args constructor");
     }
 
+    @Autowired
     public SpeakerServiceImpl(final SpeakerRepository speakerRepository) {
         System.out.println("SpeakerServiceImpl with speakerRepository parameter");
         this.speakerRepository = speakerRepository;
@@ -23,7 +24,7 @@ public class SpeakerServiceImpl implements SpeakerService {
 
     /* the available @Bean will be injected here.
      */
-    @Autowired
+    // @Autowired
     public void setSpeakerRepository(final SpeakerRepository speakerRepository) {
         System.out.println("SpeakerServiceImpl setter");
         this.speakerRepository = speakerRepository;
