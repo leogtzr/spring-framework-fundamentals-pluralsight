@@ -11,7 +11,11 @@ public class Application {
         final ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         SpeakerService speakerService = applicationContext.getBean("speakerService", SpeakerService.class);
+        System.out.println(speakerService);
         System.out.println(speakerService.findAll());
+
+        SpeakerService speakerService2 = applicationContext.getBean("speakerService", SpeakerService.class);
+        System.out.println(speakerService2);
     }
 
 }
