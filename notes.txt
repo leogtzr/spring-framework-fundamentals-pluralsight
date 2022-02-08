@@ -1,0 +1,13 @@
+Bean Lifecycle
+
+1) Instantiation.
+2) Populate properties.
+3) BeanNameAware (Spring sets the bean name and makes it aware to other resources).
+4) BeanFactoryAware
+5) Pre-initialization - BeanPostProcessor.
+6) InitializeBean.
+7) initMethod.
+8) Post Initialization - Bean Post Processors
+
+Post construct object calls requires a dependency...
+	-> javax-annotation-api

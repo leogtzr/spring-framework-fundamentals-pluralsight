@@ -1,9 +1,12 @@
 package com.pluralsight.conference.model;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class Speaker {
 
     private String firstName;
     private String lastName;
+    private double seedNum;
 
     public String getFirstName() {
         return firstName;
@@ -26,6 +29,15 @@ public class Speaker {
         return "Speaker{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", seedNum=" + seedNum +
                 '}';
+    }
+
+    public double getSeedNum() {
+        return seedNum;
+    }
+
+    public void setSeedNum(final double seedNum) {
+        this.seedNum = seedNum;
     }
 }
